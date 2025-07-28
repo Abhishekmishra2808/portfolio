@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandeep Kumar - Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Light blue-gray background */
+            color: #334155; /* Dark slate gray text */
+        }
+        .section-title {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 0.5rem;
+            margin-bottom: 2rem;
+            font-size: 2.5rem; /* Larger font size */
+            font-weight: 700; /* Bold */
+            color: #1a202c; /* Darker title color */
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 60px;
+            height: 4px;
+            background-color: #3b82f6; /* Blue underline */
+            border-radius: 2px;
+        }
+        .nav-link {
+            transition: color 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #3b82f6; /* Blue on hover */
+        }
+        .btn-primary {
+            background-color: #3b82f6;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #2563eb;
+        }
+        .card {
+            background-color: white;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .project-card {
+            background-color: white;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-md py-4 sticky top-0 z-50">
+        <nav class="container mx-auto px-6 flex justify-between items-center">
+            <div class="text-2xl font-bold text-gray-800">
+                <a href="#" class="rounded-md">Sandeep Kumar</a>
+            </div>
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="#home" class="nav-link text-gray-600 hover:text-blue-500 rounded-md">Home</a></li>
+                <li><a href="#about" class="nav-link text-gray-600 hover:text-blue-500 rounded-md">About</a></li>
+                <li><a href="#skills" class="nav-link text-gray-600 hover:text-blue-500 rounded-md">Skills</a></li>
+                <li><a href="#projects" class="nav-link text-gray-600 hover:text-blue-500 rounded-md">Projects</a></li>
+                <li><a href="#contact" class="nav-link text-gray-600 hover:text-blue-500 rounded-md">Contact</a></li>
+            </ul>
+            <div class="md:hidden">
+                <button id="menu-button" class="text-gray-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg py-2">
+            <ul class="flex flex-col items-center space-y-4">
+                <li><a href="#home" class="nav-link text-gray-600 hover:text-blue-500 rounded-md block py-2" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Home</a></li>
+                <li><a href="#about" class="nav-link text-gray-600 hover:text-blue-500 rounded-md block py-2" onclick="document.getElementById('mobile-menu').classList.add('hidden')">About</a></li>
+                <li><a href="#skills" class="nav-link text-gray-600 hover:text-blue-500 rounded-md block py-2" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Skills</a></li>
+                <li><a href="#projects" class="nav-link text-gray-600 hover:text-blue-500 rounded-md block py-2" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Projects</a></li>
+                <li><a href="#contact" class="nav-link text-gray-600 hover:text-blue-500 rounded-md block py-2" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="relative bg-gradient-to-r from-blue-500 to-indigo-600 text-white py-20 md:py-32 flex items-center justify-center min-h-screen-75">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex flex-col md:flex-row items-center justify-center md:space-x-12">
+                <div class="mb-8 md:mb-0">
+                    <img src="https://placehold.co/200x200/a0aec0/ffffff?text=SK" alt="Sandeep Kumar" class="w-48 h-48 rounded-full border-4 border-white shadow-lg mx-auto">
+                </div>
+                <div>
+                    <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">
+                        Hi, I'm <span class="text-yellow-300">Sandeep Kumar</span>
+                    </h1>
+                    <p class="text-xl md:text-2xl mb-8">
+                        A passionate <span class="font-semibold">Software Developer</span> with a focus on creating impactful web applications.
+                    </p>
+                    <a href="#projects" class="btn-primary inline-block text-lg font-medium shadow-lg hover:shadow-xl">
+                        View My Work
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title text-center mx-auto">About Me</h2>
+            <div class="max-w-3xl mx-auto text-lg leading-relaxed text-gray-700">
+                <p class="mb-4">
+                    Hello! I'm Sandeep Kumar, a dedicated software developer with a strong foundation in web technologies. I enjoy bringing ideas to life through clean, efficient, and scalable code. My journey in technology began with a fascination for how software can solve real-world problems and improve daily lives.
+                </p>
+                <p class="mb-4">
+                    Over the years, I've gained experience in various aspects of software development, from front-end user interfaces to robust back-end systems. I'm always eager to learn new technologies and adapt to the ever-evolving landscape of software engineering.
+                </p>
+                <p>
+                    When I'm not coding, you can find me exploring new hiking trails, reading about the latest tech innovations, or contributing to open-source projects. I believe in continuous learning and growth, both professionally and personally.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title text-center mx-auto">My Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Skill Card 1 -->
+                <div class="card text-center">
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Front-End Development</h3>
+                    <p class="text-gray-600">HTML, CSS, JavaScript, React, Vue.js, Tailwind CSS</p>
+                </div>
+                <!-- Skill Card 2 -->
+                <div class="card text-center">
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Back-End Development</h3>
+                    <p class="text-gray-600">Node.js, Express.js, Python, Django, Flask, RESTful APIs</p>
+                </div>
+                <!-- Skill Card 3 -->
+                <div class="card text-center">
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Databases</h3>
+                    <p class="text-gray-600">MongoDB, PostgreSQL, MySQL, Firebase, Redis</p>
+                </div>
+                <!-- Skill Card 4 -->
+                <div class="card text-center">
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Tools & Technologies</h3>
+                    <p class="text-gray-600">Git, Docker, AWS, Netlify, Vercel, Figma</p>
+                </div>
+                <!-- Skill Card 5 -->
+                <div class="card text-center">
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">DevOps & Cloud</h3>
+                    <p class="text-gray-600">CI/CD, AWS EC2, S3, Lambda, Cloud Functions</p>
+                </div>
+                <!-- Skill Card 6 -->
+                <div class="card text-center">
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Other</h3>
+                    <p class="text-gray-600">Problem Solving, Agile Methodologies, Technical Writing</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title text-center mx-auto">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Project Card 1 -->
+                <div class="project-card">
+                    <img src="https://placehold.co/600x400/3b82f6/ffffff?text=Project+1" alt="Project 1 Image">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">E-commerce Platform</h3>
+                        <p class="text-gray-600 mb-4">
+                            A full-stack e-commerce application built with React, Node.js, and MongoDB, featuring user authentication, product management, and payment gateway integration.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">React</span>
+                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Node.js</span>
+                            <span class="bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded-full">MongoDB</span>
+                        </div>
+                        <a href="#" class="text-blue-500 hover:underline font-medium">View Project &rarr;</a>
+                    </div>
+                </div>
+                <!-- Project Card 2 -->
+                <div class="project-card">
+                    <img src="https://placehold.co/600x400/ef4444/ffffff?text=Project+2" alt="Project 2 Image">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Task Management App</h3>
+                        <p class="text-gray-600 mb-4">
+                            A responsive task management application with real-time updates, user collaboration, and drag-and-drop functionality, using Vue.js and Firebase.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Vue.js</span>
+                            <span class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Firebase</span>
+                            <span class="bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Tailwind CSS</span>
+                        </div>
+                        <a href="#" class="text-blue-500 hover:underline font-medium">View Project &rarr;</a>
+                    </div>
+                </div>
+                <!-- Project Card 3 -->
+                <div class="project-card">
+                    <img src="https://placehold.co/600x400/22c55e/ffffff?text=Project+3" alt="Project 3 Image">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Blog Platform</h3>
+                        <p class="text-gray-600 mb-4">
+                            A modern blog platform with a rich text editor, comment section, and admin panel, built with Django and PostgreSQL.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Django</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Python</span>
+                            <span class="bg-teal-100 text-teal-800 text-xs font-medium px-2.5 py-0.5 rounded-full">PostgreSQL</span>
+                        </div>
+                        <a href="#" class="text-blue-500 hover:underline font-medium">View Project &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title text-center mx-auto">Get In Touch</h2>
+            <div class="max-w-xl mx-auto text-center">
+                <p class="text-lg text-gray-700 mb-8">
+                    I'm always open to new opportunities, collaborations, and interesting discussions. Feel free to reach out!
+                </p>
+                <form class="space-y-6">
+                    <div>
+                        <input type="text" id="name" name="name" placeholder="Your Name"
+                               class="w-full p-3 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                    <div>
+                        <input type="email" id="email" name="email" placeholder="Your Email"
+                               class="w-full p-3 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                    <div>
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message"
+                                  class="w-full p-3 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary w-full md:w-auto font-medium">
+                        Send Message
+                    </button>
+                </form>
+                <div class="mt-8 text-gray-600">
+                    <p>Email: <a href="mailto:sandeep.kumar@example.com" class="text-blue-500 hover:underline">sandeep.kumar@example.com</a></p>
+                    <p>LinkedIn: <a href="https://linkedin.com/in/sandeepkumar" target="_blank" class="text-blue-500 hover:underline">linkedin.com/in/sandeepkumar</a></p>
+                    <p>GitHub: <a href="https://github.com/sandeepkumar" target="_blank" class="text-blue-500 hover:underline">github.com/sandeepkumar</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center text-gray-400">
+            <p>&copy; 2024 Sandeep Kumar. All rights reserved.</p>
+            <p class="mt-2">Designed with ❤️ by Your AI Assistant</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Mobile menu toggle
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
