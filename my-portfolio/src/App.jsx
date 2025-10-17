@@ -91,7 +91,7 @@ const projects = [
         tech: ["Python", "PyTorch", "Hugging Face", "MLOps", "Neo4j", "React", "AWS S3"],
         liveUrl: "https://test-bioline.onrender.com/",
         githubUrl: "https://github.com/Abhishekmishra2808/test-bioline",
-        image: "/images/BioLine.png",
+        image: "/BioLine.png",
         architectureUrl: "https://drive.google.com/file/d/1dAhg51AToQwWHk2uPVuHBdl4X3jOyofJ/view?usp=sharing"
     },
     {
@@ -101,7 +101,7 @@ const projects = [
         tech: ["PyTorch", "OpenCV", "YOLO", "Web3", "IoT", "PostGIS", "React"],
         liveUrl: "https://village-digital.onrender.com/",
         githubUrl: "https://github.com/Abhishekmishra2808/village-digital-twin",
-        image: "/images/RuraLens.png",
+        image: "/RuraLens.png",
         architectureUrl: "https://drive.google.com/file/d/1YKBEOaaNThRwkrCHx8gJGzZ8QwL2pq-l/view?usp=sharing"
     },
     {
@@ -111,16 +111,16 @@ const projects = [
         tech: ["React", "Vite", "Firebase", "Gemini API", "JavaScript"],
         liveUrl: "https://quiz-iota-nine-98.vercel.app/",
         githubUrl: "https://github.com/Abhishekmishra2808/quiz",
-        image: "/images/quiz.jpeg"
+        image: "/quiz.jpeg"
     },
     {
         title: "MOSDAC-AI: Intelligent Scientific Data Agent",
         description: "A specialized chatbot developed for an ISRO hackathon, acting as a digital expert on India's meteorological and oceanographic data by autonomously scraping and structuring scientific data.",
         category: "AI Agent / Specialized Chatbot",
         tech: ["Python", "Gemini API", "FastAPI", "NLP", "BeautifulSoup4"],
-        liveUrl: "https://mosdac-frontend.onrender.com/",
+        liveUrl: "https://mosdac-ai.onrender.com/",
         githubUrl: "https://github.com/Abhishekmishra2808/mosdac-ai",
-        image: "/images/Mosdac.png"
+        image: "/Mosdac.png"
     }
 ];
 
@@ -417,7 +417,7 @@ const ProfileCard = () => {
             <div className="relative z-10 w-full flex flex-col gap-4 sm:gap-6 items-center">
                 <div className="relative group/avatar">
                     <img
-                        src="/images/abhishek_img.jpg"
+                        src="/abhishek_img.jpg"
                         alt="Abhishek Mishra"
                         className="w-28 h-28 sm:w-32 sm:h-32 rounded-full border-4 border-stone-100 object-cover transition-transform duration-500 group-hover:scale-110 group-hover:border-blue-200"
                     />
