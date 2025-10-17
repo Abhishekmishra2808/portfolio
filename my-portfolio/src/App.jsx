@@ -516,27 +516,49 @@ const About = () => {
     );
 };
 const CodingProfiles = () => {
-    // State to hold LeetCode stats. Initialized with your current data.
+    // State to hold LeetCode stats. Initialized with your current data as fallback.
     const [stats, setStats] = useState({
         totalSolved: 17,
         easy: 10,
         medium: 7,
         hard: 0,
-        loading: true, // Start in a loading state
+        loading: true,
     });
 
     const [isHovered, setIsHovered] = useState(false);
+    const [error, setError] = useState(false);
 
-    // This effect runs when the component mounts
+    // Fetch live LeetCode data
     useEffect(() => {
-        // For now, we'll simulate a network request with a timeout
-        const timer = setTimeout(() => {
-            setStats(prevStats => ({...prevStats, loading: false}));
-        }, 1000); // Simulate a 1-second load time
+        const fetchLeetCodeStats = async () => {
+            try {
+                // Using a public LeetCode API proxy
+                const response = await fetch('https://leetcode-stats-api.herokuapp.com/eXIzQQrEW7');
+                
+                if (!response.ok) {
+                    throw new Error('Failed to fetch');
+                }
+                
+                const data = await response.json();
+                
+                setStats({
+                    totalSolved: data.totalSolved || 17,
+                    easy: data.easySolved || 10,
+                    medium: data.mediumSolved || 7,
+                    hard: data.hardSolved || 0,
+                    loading: false,
+                });
+                setError(false);
+            } catch (err) {
+                console.error('Error fetching LeetCode stats:', err);
+                // Keep the default stats if fetch fails
+                setStats(prevStats => ({ ...prevStats, loading: false }));
+                setError(true);
+            }
+        };
 
-        return () => clearTimeout(timer); // Cleanup timer on unmount
-
-    }, []); // The empty array ensures this effect runs only once
+        fetchLeetCodeStats();
+    }, []);
 
     const { totalSolved, easy, medium, hard, loading } = stats;
     const easyPercentage = totalSolved > 0 ? (easy / totalSolved) * 100 : 0;
@@ -643,7 +665,7 @@ const CodingProfiles = () => {
                     </a>
                 </div>
                  <p className="text-xs text-gray-500 mt-4 italic relative z-10">
-                    *Stats are updated periodically. For live data, please visit the profile.
+                    {error ? '*Unable to fetch live data. Showing cached stats.' : '*Stats are fetched live from LeetCode.'}
                 </p>
             </div>
         </div>
