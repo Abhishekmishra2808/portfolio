@@ -436,7 +436,8 @@ const ProfileCard = () => {
                 {/* Resume Download Button */}
                 <a 
                     href="/resume.pdf" 
-                    download="Abhishek_Mishra_Resume.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="w-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold py-2.5 sm:py-3 px-4 sm:px-6 rounded-full transition-all duration-500 shadow-lg text-center inline-flex items-center justify-center gap-2 text-sm sm:text-base relative overflow-hidden group/btn hover:shadow-2xl hover:scale-105 animate-heartbeat"
                     style={{ animationIterationCount: 3 }}
                 >
@@ -445,7 +446,7 @@ const ProfileCard = () => {
                     <svg className="w-5 h-5 relative z-10 group-hover/btn:animate-bounce-subtle" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                     </svg>
-                    <span className="relative z-10">Download Resume</span>
+                    <span className="relative z-10">View Resume</span>
                 </a>
                 
                 <div className="flex items-center gap-3 pt-2">
