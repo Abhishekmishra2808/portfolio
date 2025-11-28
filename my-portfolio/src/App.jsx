@@ -88,18 +88,18 @@ const projects = [
         title: "Bioline: AI-Powered eDNA Analysis Platform",
         description: "An advanced bioinformatics platform leveraging a transformer-based AI pipeline to analyze raw environmental DNA, identify taxonomic lineages, and discover potential new species.",
         category: "AI Research & Bioinformatics Platform",
-        tech: ["Python", "PyTorch", "Hugging Face", "MLOps", "Neo4j", "React", "AWS S3"],
+        tech: ["PyTorch", "Hugging Face", "Neo4j", "AWS", "Docker", "Kubernetes", "Linux"],
         liveUrl: "https://test-bioline.onrender.com/",
         githubUrl: "https://github.com/Abhishekmishra2808/test-bioline",
         image: "/BioLine.png",
         architectureUrl: "https://drive.google.com/file/d/1dAhg51AToQwWHk2uPVuHBdl4X3jOyofJ/view?usp=sharing"
     },
     {
-        title: "Village Twin: Digital Twin for Smart Rural Governance",
+        title: "RuraLens: Digital Twin for Smart Rural Governance",
         description: "A digital twin platform using IoT, satellite imagery, and AI for predictive maintenance in rural villages, with a blockchain back-end for transparent financial transactions.",
         category: "GovTech & Digital Twin Platform",
-        tech: ["PyTorch", "OpenCV", "YOLO", "Web3", "IoT", "PostGIS", "React"],
-        liveUrl: "https://village-digital.onrender.com/",
+        tech: ["OpenCV", "Web3", "IoT", "PostGIS", "Node.js", "Express"],
+        liveUrl: "https://village-digital-twin-1.onrender.com/",
         githubUrl: "https://github.com/Abhishekmishra2808/village-digital-twin",
         image: "/RuraLens.png",
         architectureUrl: "https://drive.google.com/file/d/1YKBEOaaNThRwkrCHx8gJGzZ8QwL2pq-l/view?usp=sharing"
@@ -108,7 +108,7 @@ const projects = [
         title: "AI Quiz Clash",
         description: "A real-time web platform for knowledge-based competition, featuring an on-demand content engine powered by the Gemini AI to generate an endless stream of quiz questions.",
         category: "Full-Stack Web Application / AI Game",
-        tech: ["React", "Vite", "Firebase", "Gemini API", "JavaScript"],
+        tech: ["React", "Vite", "Firebase", "Tailwind", "Redux", "JavaScript"],
         liveUrl: "https://quiz-iota-nine-98.vercel.app/",
         githubUrl: "https://github.com/Abhishekmishra2808/quiz",
         image: "/quiz.jpeg"
@@ -117,7 +117,7 @@ const projects = [
         title: "MOSDAC-AI: Intelligent Scientific Data Agent",
         description: "A specialized chatbot developed for an ISRO hackathon, acting as a digital expert on India's meteorological and oceanographic data by autonomously scraping and structuring scientific data.",
         category: "AI Agent / Specialized Chatbot",
-        tech: ["Python", "Gemini API", "FastAPI", "NLP", "BeautifulSoup4"],
+        tech: ["FastAPI", "Gemini API", "Pandas", "NumPy", "Jupyter", "Python"],
         liveUrl: "https://mosdac-ai.onrender.com/",
         githubUrl: "https://github.com/Abhishekmishra2808/mosdac-ai",
         image: "/Mosdac.png"
@@ -125,12 +125,30 @@ const projects = [
 ];
 
 const skills = [
-    "AI / Machine Learning Engineering",
-    "Full-Stack AI Application Development",
-    "MLOps & Systems Architecture",
-    "Generative AI & NLP",
-    "Solid Engineering Principles",
-    "Decentralized & Emerging Tech"
+    { 
+        name: "AI / Machine Learning Engineering", 
+        icon: <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z" /></svg>
+    },
+    { 
+        name: "Full-Stack AI Application Development", 
+        icon: <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" /></svg>
+    },
+    { 
+        name: "MLOps & Systems Architecture", 
+        icon: <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" /></svg>
+    },
+    { 
+        name: "Generative AI & NLP", 
+        icon: <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z" /></svg>
+    },
+    { 
+        name: "Solid Engineering Principles", 
+        icon: <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z" /></svg>
+    },
+    { 
+        name: "Decentralized & Emerging Tech", 
+        icon: <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" d="M21 7.5l-9-5.25L3 7.5m18 0l-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9" /></svg>
+    }
 ];
 
 
@@ -141,17 +159,43 @@ const Header = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            setScrolled(window.scrollY > 50);
+            setScrolled(window.scrollY > 20);
         };
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
+    const navLinks = [
+        { name: 'Work', href: '#work' },
+        { name: 'About', href: '#about' },
+        { name: 'Contact', href: 'mailto:mishra.abhishek2808@gmail.com' }
+    ];
+
     return (
-        <header className={`w-full flex justify-between items-center py-4 md:py-6 lg:py-8 sticky top-0 z-50 backdrop-blur-xl border-b border-stone-200/50 px-4 sm:px-6 md:px-8 lg:px-12 transition-all duration-500 ${scrolled ? 'bg-stone-50/95 shadow-lg' : 'bg-stone-50/80'}`}>
+        <header 
+            className={`w-full flex justify-between items-center sticky top-0 z-50 backdrop-blur-xl transition-all duration-500 px-4 sm:px-6 md:px-8 lg:px-12 ${
+                scrolled 
+                ? 'py-2 bg-stone-50/90 shadow-sm border-b border-stone-200/50' 
+                : 'py-4 md:py-5 bg-transparent border-b border-transparent'
+            }`}
+        >
             <a href="#" className="text-lg sm:text-xl text-gray-900 tracking-tight hover:text-blue-600 transition-all duration-300 hover:scale-105" style={{ fontFamily: "'Space Grotesk', 'Inter', -apple-system, sans-serif", fontWeight: '700', letterSpacing: '-0.02em' }}>
                 Abhishek Mishra
             </a>
+            
+            <nav className="hidden md:flex items-center gap-5 lg:gap-6">
+                {navLinks.map((link) => (
+                    <a 
+                        key={link.name} 
+                        href={link.href} 
+                        className="text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors relative group py-1"
+                    >
+                        {link.name}
+                        <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                ))}
+            </nav>
+
             <div className="flex items-center gap-2 sm:gap-4">
                 <div className="flex items-center space-x-2 sm:space-x-3 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full border border-stone-200 bg-white/80 shadow-sm hover:shadow-md hover:border-green-300 transition-all duration-300 hover:scale-105 group">
                     <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse group-hover:scale-125 transition-transform"></div>
@@ -294,7 +338,7 @@ const Hero = () => {
                         top: `${tech.top}%`,
                         animation: `float ${8 + index * 0.8}s ease-in-out infinite`,
                         animationDelay: `${index * 0.7}s`,
-                        opacity: 0.15,
+                        opacity: 0.12,
                         width: '60px',
                         height: '60px'
                     }}
@@ -315,20 +359,27 @@ const Hero = () => {
             {showContent && (
                 <>
                     <div style={{ position: 'relative', zIndex: 10 }} className="text-center px-4 sm:px-6 max-w-6xl mx-auto">
-                        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-[1.15] tracking-tight animate-slideDown" style={{ fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" }}>
-                            <span style={{ fontWeight: '800', background: 'linear-gradient(90deg, #000000 0%, #1f2937 40%, #6b7280 70%, #d1d5db 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>Full-Stack Developer & ML Engineer.</span>
-                            {displayText.length < text1.length && <span className="animate-pulse text-gray-900">|</span>}
+                        {/* Gradient Wash behind text */}
+                        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/50 to-white/80 blur-3xl -z-10 rounded-full transform scale-110"></div>
+
+                        {/* Vertical Gradient for Depth */}
+                        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-stone-50/30 to-stone-100/50 blur-2xl -z-20"></div>
+
+                        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-[0.9] tracking-tight animate-slideDown font-extrabold" style={{ fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" }}>
+                            <span className="block" style={{ background: 'linear-gradient(90deg, #000000 0%, #1f2937 40%, #6b7280 70%, #d1d5db 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+                                Full-Stack Developer & ML Engineer.
+                            </span>
                         </h1>
                         
                         {displayText === text1 && (
-                            <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl mt-4 sm:mt-6 font-medium animate-slideUp" style={{ background: 'linear-gradient(90deg, #374151 0%, #6b7280 50%, #9ca3af 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+                            <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl mt-6 sm:mt-8 font-medium animate-slideUp" style={{ background: 'linear-gradient(90deg, #374151 0%, #6b7280 50%, #9ca3af 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
                                 {displaySubtext}
                                 {displaySubtext.length < text2.length && <span className="animate-pulse">|</span>}
                             </h3>
                         )}
                         
                         {displaySubtext === text2 && (
-                            <p className="mt-6 sm:mt-8 text-sm sm:text-base md:text-lg text-gray-600 max-w-3xl mx-auto font-light animate-fadeIn animation-delay-500">
+                            <p className="mt-8 sm:mt-10 text-sm sm:text-base md:text-lg text-gray-600 max-w-3xl mx-auto font-light animate-fadeIn animation-delay-500">
                                 Building the future with AI, <span className="font-semibold text-blue-600">one intelligent system at a time</span>.
                             </p>
                         )}
@@ -369,98 +420,64 @@ const ProfileCard = () => {
     return (
         <div className="sticky top-28">
             <div 
-                className="relative bg-white/60 backdrop-blur-sm p-6 sm:p-8 rounded-3xl border border-stone-200/50 flex flex-col gap-4 sm:gap-6 text-center items-center shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden group"
-                style={{ boxShadow: '0 0 0 1px rgba(99, 102, 241, 0.05), 0 4px 6px -1px rgba(0, 0, 0, 0.05)' }}
+                className="relative bg-white/80 backdrop-blur-xl p-6 sm:p-8 rounded-3xl border border-stone-200/60 flex flex-col gap-6 text-center items-center shadow-sm hover:shadow-2xl transition-all duration-500 overflow-hidden group"
                 onMouseMove={handleMouseMove}
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
             >
-            {/* Animated gradient background */}
+            {/* Gradient Border Effect - Subtle */}
+            <div className="absolute inset-0 rounded-3xl p-[1px] bg-gradient-to-br from-transparent via-blue-100 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
+
+            {/* Soft Glow Background */}
             <div 
-                className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700"
+                className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"
                 style={{
-                    background: `radial-gradient(circle at ${mousePosition.x}% ${mousePosition.y}%, rgba(99, 102, 241, 0.08) 0%, rgba(59, 130, 246, 0.04) 40%, transparent 70%)`
+                    background: `radial-gradient(circle at ${mousePosition.x}% ${mousePosition.y}%, rgba(59, 130, 246, 0.03) 0%, transparent 60%)`
                 }}
             />
             
-            {/* Floating particles */}
-            <div className="absolute inset-0 pointer-events-none">
-                {[...Array(6)].map((_, i) => (
-                    <div
-                        key={i}
-                        className="absolute w-1 h-1 bg-blue-400/30 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                        style={{
-                            left: `${15 + i * 15}%`,
-                            top: `${20 + (i * 12) % 60}%`,
-                            animation: `float ${4 + i * 0.5}s ease-in-out infinite`,
-                            animationDelay: `${i * 0.3}s`
-                        }}
-                    />
-                ))}
-            </div>
-            
-            {/* Glow effect following mouse */}
-            {isHovered && (
-                <div
-                    className="absolute w-32 h-32 rounded-full pointer-events-none transition-all duration-300"
-                    style={{
-                        background: 'radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, transparent 70%)',
-                        left: `${mousePosition.x}%`,
-                        top: `${mousePosition.y}%`,
-                        transform: 'translate(-50%, -50%)',
-                        filter: 'blur(20px)'
-                    }}
-                />
-            )}
-
             {/* Content */}
-            <div className="relative z-10 w-full flex flex-col gap-4 sm:gap-6 items-center">
+            <div className="relative z-10 w-full flex flex-col gap-6 items-center">
                 <div className="relative group/avatar">
+                    <div className="absolute inset-0 bg-blue-500 rounded-2xl blur-2xl opacity-0 group-hover:opacity-20 transition-opacity duration-500 scale-90 group-hover:scale-110"></div>
                     <img
                         src="/abhishek_img.jpg"
                         alt="Abhishek Mishra"
-                        className="w-28 h-28 sm:w-32 sm:h-32 rounded-full border-4 border-stone-100 object-cover transition-transform duration-500 group-hover:scale-110 group-hover:border-blue-200"
+                        className="w-32 h-32 sm:w-40 sm:h-40 rounded-2xl border-2 border-white shadow-lg object-cover transition-transform duration-700 group-hover:scale-[1.02] group-hover:rotate-1"
                     />
-                    {/* Rotating ring */}
-                    <div className="absolute inset-0 rounded-full border-2 border-transparent border-t-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500" style={{ animation: 'logo-spin 3s linear infinite' }}></div>
-                    <div className="absolute inset-0 rounded-full" style={{ boxShadow: 'inset 0 0 20px rgba(99, 102, 241, 0.2)' }}></div>
                 </div>
                 
-                <div>
-                    <h2 className="text-xl sm:text-2xl font-semibold text-gray-900 transition-colors group-hover:text-blue-600">Abhishek Mishra</h2>
-                    <p className="text-gray-600 mt-2 font-medium text-sm sm:text-base">Full-Stack Developer & ML Engineer</p>
-                    <p className="text-gray-500 text-xs sm:text-sm mt-1">Delhi, India</p>
-                    <a href="tel:+918178246838" className="text-blue-600 hover:text-indigo-600 text-xs sm:text-sm mt-1 inline-block transition-colors">+91 8178246838</a>
+                <div className="space-y-2">
+                    <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">Abhishek Mishra</h2>
+                    <p className="text-gray-500 font-medium">Full-Stack & ML Engineer</p>
+                    <div className="flex items-center justify-center gap-2 text-sm text-gray-400 pt-1">
+                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                        <span>Delhi, India</span>
+                    </div>
                 </div>
                 
                 {/* Resume Download Button */}
                 <a 
-                    href="/resume.pdf" 
+                    href="/abhishek_resume.pdf" 
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold py-2.5 sm:py-3 px-4 sm:px-6 rounded-full transition-all duration-500 shadow-lg text-center inline-flex items-center justify-center gap-2 text-sm sm:text-base relative overflow-hidden group/btn hover:shadow-2xl hover:scale-105 animate-heartbeat"
-                    style={{ animationIterationCount: 3 }}
+                    className="w-full bg-gray-900 text-white font-medium py-3 px-6 rounded-xl transition-all duration-300 shadow-md hover:shadow-xl hover:bg-gray-800 hover:-translate-y-0.5 flex items-center justify-center gap-2 group/btn"
                 >
-                    <div className="absolute inset-0 bg-gradient-to-r from-indigo-600 to-purple-600 opacity-0 group-hover/btn:opacity-100 transition-opacity duration-500"></div>
-                    <div className="absolute inset-0 animate-shimmer opacity-30"></div>
-                    <svg className="w-5 h-5 relative z-10 group-hover/btn:animate-bounce-subtle" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    <span>View Resume</span>
+                    <svg className="w-4 h-4 transition-transform group-hover/btn:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                     </svg>
-                    <span className="relative z-10">View Resume</span>
                 </a>
                 
-                <div className="flex items-center gap-3 pt-2">
-                    <a href="https://github.com/Abhishekmishra2808" target="_blank" rel="noopener noreferrer" className="p-3 bg-gradient-to-br from-stone-100/80 to-blue-50/50 rounded-full hover:from-blue-100/80 hover:to-indigo-50/80 transition-all text-gray-700 hover:text-blue-600 hover:scale-110 transform hover:rotate-12 shadow-sm hover:shadow-lg hover-glow group/icon relative">
+                <div className="flex items-center gap-4 pt-2">
+                    <a href="https://github.com/Abhishekmishra2808" target="_blank" rel="noopener noreferrer" className="p-2 text-gray-400 hover:text-gray-900 transition-colors transform hover:scale-110">
                         <GitHubIcon />
-                        <span className="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover/icon:opacity-100 transition-opacity whitespace-nowrap">GitHub</span>
                     </a>
-                    <a href="https://www.linkedin.com/in/abhishek-mishra-b76993317/" target="_blank" rel="noopener noreferrer" className="p-3 bg-gradient-to-br from-stone-100/80 to-blue-50/50 rounded-full hover:from-blue-100/80 hover:to-indigo-50/80 transition-all text-gray-700 hover:text-blue-600 hover:scale-110 transform hover:rotate-12 shadow-sm hover:shadow-lg hover-glow group/icon relative">
+                    <a href="https://www.linkedin.com/in/abhishek-mishra-b76993317/" target="_blank" rel="noopener noreferrer" className="p-2 text-gray-400 hover:text-blue-600 transition-colors transform hover:scale-110">
                         <LinkedInIcon />
-                        <span className="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover/icon:opacity-100 transition-opacity whitespace-nowrap">LinkedIn</span>
                     </a>
-                    <a href="mailto:mishra.abhishek2808@gmail.com" className="p-3 bg-gradient-to-br from-stone-100/80 to-blue-50/50 rounded-full hover:from-blue-100/80 hover:to-indigo-50/80 transition-all text-gray-700 hover:text-blue-600 hover:scale-110 transform hover:rotate-12 shadow-sm hover:shadow-lg hover-glow group/icon relative">
+                    <a href="mailto:mishra.abhishek2808@gmail.com" className="p-2 text-gray-400 hover:text-red-500 transition-colors transform hover:scale-110">
                         <MailIcon />
-                        <span className="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover/icon:opacity-100 transition-opacity whitespace-nowrap">Email</span>
                     </a>
                 </div>
             </div>
@@ -478,7 +495,7 @@ const About = () => {
     }, []);
 
     return (
-        <div className={`md:col-span-2 space-y-12 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+        <div className={`md:col-span-1 space-y-12 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <div className="group">
                 <h2 className="text-2xl font-semibold text-gray-900 mb-6 relative inline-block">
                     About Me
@@ -502,12 +519,13 @@ const About = () => {
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     {skills.map((skill, index) => (
                         <li 
-                            key={skill} 
-                            className="text-gray-700 bg-gradient-to-br from-gray-50 to-blue-50/30 border border-gray-200 rounded-xl px-5 py-4 text-base transition-all hover:from-white hover:to-blue-50/50 hover:shadow-md hover:border-blue-200/50 hover:scale-105 transform cursor-pointer group relative overflow-hidden"
+                            key={skill.name} 
+                            className="text-gray-700 bg-gradient-to-r from-stone-50 to-white border border-transparent ring-1 ring-stone-200/50 rounded-xl px-6 py-4 text-base transition-all hover:ring-blue-300 hover:shadow-lg hover:shadow-blue-500/10 hover:-translate-y-1 transform cursor-pointer group relative overflow-hidden flex items-center gap-3"
                             style={{ animationDelay: `${index * 100}ms` }}
                         >
-                            <div className="absolute inset-0 bg-gradient-to-r from-blue-400/0 via-blue-400/10 to-blue-400/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></div>
-                            <span className="relative z-10">{skill}</span>
+                            <span className="text-2xl group-hover:scale-125 transition-transform duration-300">{skill.icon}</span>
+                            <span className="relative z-10 font-medium">{skill.name}</span>
+                            <div className="absolute inset-0 bg-gradient-to-r from-blue-50/0 via-blue-50/50 to-blue-50/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></div>
                         </li>
                     ))}
                 </ul>
@@ -566,168 +584,235 @@ const CodingProfiles = () => {
     const hardPercentage = totalSolved > 0 ? (hard / totalSolved) * 100 : 0;
 
     return (
-        <div className="md:col-span-2">
-            <div 
-                className={`bg-white/60 backdrop-blur-sm rounded-3xl border border-stone-200/50 p-8 transition-all duration-500 group relative overflow-hidden ${loading ? 'animate-pulse' : 'hover:shadow-2xl hover:border-yellow-300/50 hover:scale-[1.02]'}`} 
-                style={{ boxShadow: '0 0 0 1px rgba(234, 179, 8, 0.08), 0 4px 6px -1px rgba(0, 0, 0, 0.05)' }}
-                onMouseEnter={() => setIsHovered(true)}
-                onMouseLeave={() => setIsHovered(false)}
-            >
-                {/* Animated background effect */}
-                <div className="absolute inset-0 bg-gradient-to-br from-yellow-400/5 via-green-400/5 to-blue-400/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
-                
-                <div className="flex items-start justify-between relative z-10">
-                    <div>
-                        <h3 className="text-2xl font-semibold text-gray-900 group-hover:text-yellow-600 transition-colors duration-300">LeetCode Stats</h3>
-                        <p className="text-gray-600 mt-2 transition-all duration-300">Total Solved: <span className="font-bold bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent group-hover:from-yellow-600 group-hover:to-green-600 transition-all duration-500">{totalSolved}+</span></p>
-                    </div>
-                    <div className="transition-transform duration-500 group-hover:scale-110 group-hover:rotate-12">
-                        <LeetCodeIcon />
-                    </div>
-                </div>
-
-                <div className="mt-8 space-y-6 relative z-10">
-                    {/* Easy Problems */}
-                    <div className="group/bar">
-                        <div className="flex justify-between items-center mb-2">
-                            <div className="flex items-center gap-2">
-                                <span className="w-3 h-3 rounded-full bg-gradient-to-br from-green-400 to-green-600 shadow-sm group-hover/bar:scale-125 transition-transform duration-300"></span>
-                                <span className="text-sm font-medium text-gray-700 group-hover/bar:text-green-600 transition-colors">Easy</span>
-                            </div>
-                            <span className="text-sm font-semibold text-gray-900 group-hover/bar:text-green-600 transition-colors">{easy} / {totalSolved}</span>
-                        </div>
-                        <div className="relative h-3 bg-stone-100 rounded-full overflow-hidden shadow-inner group-hover/bar:h-4 transition-all duration-300">
-                            <div 
-                                className="absolute top-0 left-0 h-full bg-gradient-to-r from-green-400 via-green-500 to-emerald-500 rounded-full transition-all duration-1000 ease-out"
-                                style={{ 
-                                    width: loading ? '0%' : `${easyPercentage}%`,
-                                    boxShadow: isHovered ? '0 0 20px rgba(34, 197, 94, 0.8)' : '0 0 10px rgba(34, 197, 94, 0.5)'
-                                }}
-                            >
-                                <div className="absolute inset-0 bg-white/30 animate-pulse"></div>
-                                <div className="absolute inset-0 animate-shimmer opacity-30"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Medium Problems */}
-                    <div className="group/bar">
-                        <div className="flex justify-between items-center mb-2">
-                            <div className="flex items-center gap-2">
-                                <span className="w-3 h-3 rounded-full bg-gradient-to-br from-yellow-400 to-amber-600 shadow-sm group-hover/bar:scale-125 transition-transform duration-300"></span>
-                                <span className="text-sm font-medium text-gray-700 group-hover/bar:text-yellow-600 transition-colors">Medium</span>
-                            </div>
-                            <span className="text-sm font-semibold text-gray-900 group-hover/bar:text-yellow-600 transition-colors">{medium} / {totalSolved}</span>
-                        </div>
-                        <div className="relative h-3 bg-stone-100 rounded-full overflow-hidden shadow-inner group-hover/bar:h-4 transition-all duration-300">
-                            <div 
-                                className="absolute top-0 left-0 h-full bg-gradient-to-r from-yellow-400 via-amber-500 to-orange-500 rounded-full transition-all duration-1000 ease-out"
-                                style={{ 
-                                    width: loading ? '0%' : `${mediumPercentage}%`,
-                                    boxShadow: isHovered ? '0 0 20px rgba(251, 191, 36, 0.8)' : '0 0 10px rgba(251, 191, 36, 0.5)',
-                                    transitionDelay: '200ms'
-                                }}
-                            >
-                                <div className="absolute inset-0 bg-white/30 animate-pulse"></div>
-                                <div className="absolute inset-0 animate-shimmer opacity-30"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Hard Problems */}
-                    <div className="group/bar">
-                        <div className="flex justify-between items-center mb-2">
-                            <div className="flex items-center gap-2">
-                                <span className="w-3 h-3 rounded-full bg-gradient-to-br from-red-400 to-rose-600 shadow-sm group-hover/bar:scale-125 transition-transform duration-300"></span>
-                                <span className="text-sm font-medium text-gray-700 group-hover/bar:text-red-600 transition-colors">Hard</span>
-                            </div>
-                            <span className="text-sm font-semibold text-gray-900 group-hover/bar:text-red-600 transition-colors">{hard} / {totalSolved}</span>
-                        </div>
-                        <div className="relative h-3 bg-stone-100 rounded-full overflow-hidden shadow-inner group-hover/bar:h-4 transition-all duration-300">
-                            <div 
-                                className="absolute top-0 left-0 h-full bg-gradient-to-r from-red-400 via-rose-500 to-pink-500 rounded-full transition-all duration-1000 ease-out"
-                                style={{ 
-                                    width: loading ? '0%' : `${hardPercentage}%`,
-                                    boxShadow: isHovered ? '0 0 20px rgba(239, 68, 68, 0.8)' : '0 0 10px rgba(239, 68, 68, 0.5)',
-                                    transitionDelay: '400ms'
-                                }}
-                            >
-                                <div className="absolute inset-0 bg-white/30 animate-pulse"></div>
-                                <div className="absolute inset-0 animate-shimmer opacity-30"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="mt-8 pt-6 border-t border-stone-200 relative z-10">
-                     <a href="https://leetcode.com/u/eXIzQQrEW7/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-700 transition-all duration-300 hover:gap-2 group">
-                        View LeetCode Profile <ArrowUpRightIcon/>
-                    </a>
-                </div>
-                 <p className="text-xs text-gray-500 mt-4 italic relative z-10">
-                    {error ? '*Unable to fetch live data. Showing cached stats.' : '*Stats are fetched live from LeetCode.'}
+        <div className="md:col-span-2 flex flex-col gap-8">
+            <div>
+                <h3 className="text-xl font-semibold text-gray-900">Continuous Improvement</h3>
+                <p className="mt-2 text-gray-600 leading-relaxed">
+                    I actively sharpen my problem-solving skills through algorithmic challenges. 
+                    Consistency on platforms like LeetCode helps me write optimized, scalable code.
                 </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {/* LeetCode Card */}
+                <div 
+                    className={`bg-white rounded-3xl border border-stone-200 p-8 transition-all duration-500 group relative overflow-hidden ${loading ? 'animate-pulse' : 'hover:shadow-2xl hover:border-yellow-400/50 hover:-translate-y-1'}`} 
+                    style={{ boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.05)' }}
+                    onMouseEnter={() => setIsHovered(true)}
+                    onMouseLeave={() => setIsHovered(false)}
+                >
+                    {/* Animated background effect */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-yellow-50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+                    
+                    <div className="flex items-start justify-between relative z-10">
+                        <div>
+                            <h3 className="text-2xl font-bold text-gray-900 group-hover:text-yellow-600 transition-colors duration-300 flex items-center gap-2">
+                                LeetCode <ArrowUpRightIcon />
+                            </h3>
+                            <p className="text-gray-600 mt-1 text-sm">Problem Solving</p>
+                        </div>
+                        <div className="p-3 bg-yellow-100 rounded-2xl text-yellow-600 group-hover:scale-110 transition-transform duration-500 group-hover:rotate-12">
+                            <LeetCodeIcon />
+                        </div>
+                    </div>
+
+                    <div className="mt-8 space-y-5 relative z-10">
+                        <div className="flex justify-between items-end">
+                            <span className="text-4xl font-bold text-gray-900">{totalSolved}</span>
+                            <span className="text-sm font-medium text-gray-500 mb-1">Problems Solved</span>
+                        </div>
+
+                        {/* Progress Bars */}
+                        <div className="space-y-3">
+                            {/* Easy */}
+                            <div className="space-y-1">
+                                <div className="flex justify-between text-xs font-medium">
+                                    <span className="text-green-600">Easy</span>
+                                    <span className="text-gray-400">{easy}</span>
+                                </div>
+                                <div className="h-2 bg-stone-100 rounded-full overflow-hidden">
+                                    <div className="h-full bg-green-500 rounded-full transition-all duration-1000" style={{ width: `${easyPercentage}%` }}></div>
+                                </div>
+                            </div>
+                            {/* Medium */}
+                            <div className="space-y-1">
+                                <div className="flex justify-between text-xs font-medium">
+                                    <span className="text-yellow-600">Medium</span>
+                                    <span className="text-gray-400">{medium}</span>
+                                </div>
+                                <div className="h-2 bg-stone-100 rounded-full overflow-hidden">
+                                    <div className="h-full bg-yellow-500 rounded-full transition-all duration-1000" style={{ width: `${mediumPercentage}%` }}></div>
+                                </div>
+                            </div>
+                            {/* Hard */}
+                            <div className="space-y-1">
+                                <div className="flex justify-between text-xs font-medium">
+                                    <span className="text-red-600">Hard</span>
+                                    <span className="text-gray-400">{hard}</span>
+                                </div>
+                                <div className="h-2 bg-stone-100 rounded-full overflow-hidden">
+                                    <div className="h-full bg-red-500 rounded-full transition-all duration-1000" style={{ width: `${hardPercentage}%` }}></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="https://leetcode.com/u/eXIzQQrEW7/" target="_blank" rel="noopener noreferrer" className="absolute inset-0 z-20"></a>
+                </div>
+
+                {/* GitHub Card - Updated to match LeetCode style */}
+                <div 
+                    className="bg-white rounded-3xl border border-stone-200 p-8 transition-all duration-500 group relative overflow-hidden hover:shadow-2xl hover:border-gray-400/50 hover:-translate-y-1"
+                    style={{ boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.05)' }}
+                >
+                    <div className="absolute inset-0 bg-gradient-to-br from-gray-50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+                    
+                    <div className="flex items-start justify-between relative z-10">
+                        <div>
+                            <h3 className="text-2xl font-bold text-gray-900 group-hover:text-gray-700 transition-colors duration-300 flex items-center gap-2">
+                                GitHub <ArrowUpRightIcon />
+                            </h3>
+                            <p className="text-gray-600 mt-1 text-sm">Open Source</p>
+                        </div>
+                        <div className="p-3 bg-gray-100 rounded-2xl text-gray-700 group-hover:scale-110 transition-transform duration-500 group-hover:rotate-12">
+                            <GitHubIcon />
+                        </div>
+                    </div>
+
+                    <div className="mt-8 relative z-10 flex flex-col justify-between h-full">
+                        <p className="text-gray-600 text-sm leading-relaxed mb-6">
+                            Check out my repositories for more projects, experiments, and contributions to the open-source community.
+                        </p>
+                        <div className="flex gap-6">
+                            <div className="flex flex-col">
+                                <span className="text-3xl font-bold text-gray-900 flex items-center gap-2">
+                                    15+ 
+                                    <svg className="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                                </span>
+                                <span className="text-xs text-gray-500 font-medium mt-1">Repositories</span>
+                            </div>
+                            <div className="flex flex-col">
+                                <span className="text-3xl font-bold text-gray-900 flex items-center gap-2">
+                                    Active
+                                    <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+                                </span>
+                                <span className="text-xs text-gray-500 font-medium mt-1">Status</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://github.com/Abhishekmishra2808" target="_blank" rel="noopener noreferrer" className="absolute inset-0 z-20"></a>
+                </div>
             </div>
         </div>
     );
+};
+
+const techIconsMap = {
+    "Python": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+    "PyTorch": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg",
+    "React": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+    "TensorFlow": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg",
+    "Firebase": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
+    "Node.js": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+    "Docker": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+    "MongoDB": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+    "PostgreSQL": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+    "AWS": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
+    "AWS S3": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
+    "JavaScript": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+    "TypeScript": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+    "Git": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+    "NumPy": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg",
+    "Pandas": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg",
+    "FastAPI": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg",
+    "Express": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+    "Redux": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
+    "Tailwind": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
+    "Kubernetes": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg",
+    "MySQL": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+    "OpenCV": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg",
+    "Jupyter": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg",
+    "VSCode": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
+    "Nginx": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg",
+    "Neo4j": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/neo4j/neo4j-original.svg",
+    "Vite": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg",
+    "PostGIS": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+    "Hugging Face": "https://huggingface.co/front/assets/huggingface_logo-noborder.svg",
+    "MLOps": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
+    "YOLO": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg", // Fallback to OpenCV
+    "Web3": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/polygon/polygon-original.svg",
+    "IoT": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg",
+    "Gemini API": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Google_Gemini_logo.svg",
+    "NLP": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+    "BeautifulSoup4": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+    "Linux": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
 };
 
 const Work = () => {
     const [hoveredIndex, setHoveredIndex] = useState(null);
 
     return (
-        <div className="md:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+        <div className="md:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-y-12 sm:gap-y-16 gap-x-8">
             {projects.map((project, index) => (
                 <div 
                     key={index} 
                     onMouseEnter={() => setHoveredIndex(index)}
                     onMouseLeave={() => setHoveredIndex(null)}
-                    className={`bg-white/60 backdrop-blur-sm rounded-3xl border border-stone-200/50 flex flex-col transition-all duration-500 overflow-hidden group cursor-pointer ${hoveredIndex === index ? 'shadow-2xl border-blue-300/70 scale-[1.02] -translate-y-2' : 'hover:shadow-lg hover:border-blue-200/50'}`} 
-                    style={{ boxShadow: hoveredIndex === index ? '0 20px 40px rgba(59, 130, 246, 0.15), 0 0 0 1px rgba(59, 130, 246, 0.1)' : '0 0 0 1px rgba(59, 130, 246, 0.05), 0 4px 6px -1px rgba(0, 0, 0, 0.05)' }}
+                    className={`bg-white rounded-3xl border border-stone-200 flex flex-col transition-all duration-500 overflow-hidden group cursor-pointer ${hoveredIndex === index ? 'shadow-2xl border-blue-300/70 scale-[1.02] -translate-y-2' : 'hover:shadow-xl hover:border-blue-200/50'}`} 
+                    style={{ 
+                        boxShadow: hoveredIndex === index ? '0 25px 50px -12px rgba(59, 130, 246, 0.25)' : '0 4px 6px -1px rgba(0, 0, 0, 0.05)',
+                        animationDelay: index * 200 + 'ms'
+                    }}
                 >
-                    <div className="bg-gradient-to-br from-blue-50/50 via-indigo-50/30 to-stone-50 h-48 sm:h-56 flex items-center justify-center relative overflow-hidden">
+                    <div className="bg-stone-100 h-64 sm:h-72 flex items-center justify-center relative overflow-hidden">
                         <img 
                             src={project.image} 
                             alt={project.title}
-                            className={`w-full h-full object-cover rounded-t-3xl transition-all duration-700 ${hoveredIndex === index ? 'scale-110' : 'scale-100'}`}
+                            className={`w-full h-full object-cover transition-all duration-700 ${hoveredIndex === index ? 'scale-110' : 'scale-100'}`}
                             style={{ objectPosition: 'top center' }}
                         />
-                        <div className={`absolute inset-0 bg-gradient-to-br from-blue-500/10 to-indigo-500/10 transition-opacity duration-500 pointer-events-none ${hoveredIndex === index ? 'opacity-100' : 'opacity-0'}`}>
-                            <div className="absolute inset-0 animate-shimmer"></div>
+                        <div className={`absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent transition-opacity duration-500 ${hoveredIndex === index ? 'opacity-100' : 'opacity-60'}`}></div>
+                        
+                        {/* Floating Action Button on Image */}
+                        <div className={`absolute bottom-4 right-4 flex gap-2 transition-all duration-500 ${hoveredIndex === index ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`}>
+                             <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="p-3 bg-white rounded-full text-gray-900 hover:text-blue-600 shadow-lg hover:scale-110 transition-all">
+                                <ArrowUpRightIcon />
+                            </a>
                         </div>
                     </div>
-                    <div className="p-4 sm:p-6 flex flex-col flex-grow">
-                        <div>
-                            <span className={`text-xs uppercase tracking-wider font-semibold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent transition-all duration-300 ${hoveredIndex === index ? 'tracking-widest' : ''}`}>{project.category}</span>
-                            <h3 className={`mt-2 sm:mt-3 text-lg sm:text-xl font-semibold text-gray-900 transition-colors duration-300 ${hoveredIndex === index ? 'text-blue-600' : ''}`}>{project.title}</h3>
-                            <p className="mt-2 sm:mt-3 text-gray-600 leading-relaxed text-xs sm:text-sm">{project.description}</p>
+                    
+                    <div className="p-6 sm:p-8 flex flex-col flex-grow relative">
+                        <div className="absolute -top-6 left-6 sm:left-8">
+                             <span className="bg-blue-600 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-md uppercase tracking-wider">
+                                {project.category.split(' ')[0]}
+                             </span>
                         </div>
-                        <div className="mt-4 sm:mt-5 pt-3 sm:pt-4 flex-wrap flex gap-2">
-                            {project.tech.map((t, i) => (
-                                <span 
-                                    key={t} 
-                                    className="text-xs bg-gradient-to-br from-stone-100 to-blue-50/50 text-gray-700 px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-full font-medium hover:from-blue-50 hover:to-indigo-50/50 transition-all duration-300 hover:scale-110 hover:shadow-md"
-                                    style={{ 
-                                        animationDelay: `${i * 50}ms`,
-                                        transition: `all 0.3s ease ${i * 50}ms`
-                                    }}
-                                >
-                                    {t}
-                                </span>
-                            ))}
+
+                        <div className="mt-2">
+                            <h3 className={`text-xl sm:text-2xl font-bold text-gray-900 transition-colors duration-300 ${hoveredIndex === index ? 'text-blue-600' : ''}`}>{project.title}</h3>
+                            <p className="mt-3 text-gray-600 leading-relaxed text-sm sm:text-base line-clamp-3">{project.description}</p>
                         </div>
-                        <div className="mt-auto pt-4 sm:pt-6 flex items-center flex-wrap gap-3 sm:gap-4">
-                            <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-xs sm:text-sm font-medium text-blue-600 hover:text-indigo-600 transition-all duration-300 hover:gap-2 group">
-                                Live Demo <ArrowUpRightIcon/>
-                            </a>
-                            <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-xs sm:text-sm font-medium text-gray-700 hover:text-blue-600 transition-all duration-300 hover:gap-2 group">
-                                GitHub <ArrowUpRightIcon/>
-                            </a>
-                            {project.architectureUrl && (
-                                <a href={project.architectureUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-xs sm:text-sm font-medium text-purple-600 hover:text-purple-700 transition-all duration-300 hover:gap-2 group">
-                                    Architecture <ArrowUpRightIcon/>
-                                </a>
-                            )}
+                        
+                        <div className="mt-6 pt-6 border-t border-stone-100">
+                            <div className="flex flex-wrap gap-3 items-center">
+                                {project.tech.slice(0, 5).map((t, i) => (
+                                    techIconsMap[t] ? (
+                                        <div key={t} className="relative group/icon" title={t}>
+                                            <img src={techIconsMap[t]} alt={t} className="w-6 h-6 grayscale group-hover/icon:grayscale-0 transition-all duration-300 hover:scale-125" />
+                                        </div>
+                                    ) : (
+                                        <span 
+                                            key={t} 
+                                            className="text-xs bg-stone-100 text-gray-600 px-2.5 py-1 rounded-md font-medium hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                                        >
+                                            {t}
+                                        </span>
+                                    )
+                                ))}
+                                {project.tech.length > 5 && (
+                                    <span className="text-xs text-gray-400 font-medium">+{project.tech.length - 5}</span>
+                                )}
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -766,13 +851,12 @@ const Section = ({ title, children, id }) => {
         <section 
             ref={sectionRef}
             id={id} 
-            className={`py-12 sm:py-16 md:py-20 grid md:grid-cols-3 gap-6 md:gap-8 lg:gap-12 border-t border-stone-200/50 transition-all duration-1000 ${isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'}`}
+            className={`py-20 sm:py-24 md:py-32 grid md:grid-cols-[280px_1fr] gap-8 lg:gap-12 border-t border-stone-200/50 transition-all duration-1000 ${isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'}`}
         >
             <div className="md:col-span-1 sticky top-28 self-start">
-                <h2 className="text-2xl sm:text-3xl font-semibold text-gray-900 group inline-block">
+                <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 group inline-block tracking-wide">
                     {title}
-                    <span className="absolute -bottom-1 left-0 w-0 h-1 bg-gradient-to-r from-blue-600 to-indigo-600 group-hover:w-full transition-all duration-500 rounded-full"></span>
-                    <span className="absolute -inset-2 bg-blue-500/5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10"></span>
+                    <span className="block h-1.5 w-12 bg-blue-600 mt-4 rounded-full group-hover:w-full transition-all duration-500 ease-out"></span>
                 </h2>
             </div>
             {children}
@@ -785,7 +869,13 @@ const Footer = () => {
     const [isHovered, setIsHovered] = useState(false);
 
     return (
-        <footer className="w-full py-16 sm:py-20 md:py-24 border-t border-stone-200/50 text-center px-4 sm:px-6 relative overflow-hidden">
+        <footer className="w-full py-12 sm:py-16 border-t border-stone-200/50 text-center px-4 sm:px-6 relative overflow-hidden bg-gradient-to-b from-stone-50 to-white">
+            {/* Textured Background */}
+            <div className="absolute inset-0 opacity-40" style={{ backgroundImage: 'radial-gradient(#cbd5e1 1px, transparent 1px)', backgroundSize: '24px 24px' }}></div>
+            
+            {/* Radial Gradient Highlight */}
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full max-w-4xl bg-radial-gradient from-blue-50/50 to-transparent opacity-50 pointer-events-none"></div>
+            
             {/* Animated background particles */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
                 {[...Array(6)].map((_, i) => (
@@ -802,18 +892,31 @@ const Footer = () => {
                 ))}
             </div>
 
-            <div className="relative z-10">
-                <h3 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-gray-900 animate-fadeIn">
+            <div className="relative z-10 max-w-4xl mx-auto">
+                <h3 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 animate-fadeIn tracking-tight">
                     Get in Touch
                 </h3>
-                <p className="mt-4 sm:mt-6 text-gray-600 max-w-2xl mx-auto text-base sm:text-lg px-4 animate-slideUp">
+                <p className="mt-6 text-gray-600 max-w-2xl mx-auto text-lg px-4 animate-slideUp leading-relaxed">
                     I'm currently seeking new opportunities and am open to collaboration. Feel free to reach out if you have a project in mind or just want to connect.
                 </p>
+                
+                <div className="mt-10 flex justify-center gap-6">
+                    <a href="https://github.com/Abhishekmishra2808" target="_blank" rel="noopener noreferrer" className="p-3 bg-white rounded-full shadow-md hover:shadow-lg hover:scale-110 transition-all duration-300 text-gray-700 hover:text-black">
+                        <GitHubIcon />
+                    </a>
+                    <a href="https://www.linkedin.com/in/abhishek-mishra-b76993317/" target="_blank" rel="noopener noreferrer" className="p-3 bg-white rounded-full shadow-md hover:shadow-lg hover:scale-110 transition-all duration-300 text-gray-700 hover:text-blue-600">
+                        <LinkedInIcon />
+                    </a>
+                    <a href="mailto:mishra.abhishek2808@gmail.com" className="p-3 bg-white rounded-full shadow-md hover:shadow-lg hover:scale-110 transition-all duration-300 text-gray-700 hover:text-red-500">
+                        <MailIcon />
+                    </a>
+                </div>
+
                 <a 
                     href="mailto:mishra.abhishek2808@gmail.com" 
                     onMouseEnter={() => setIsHovered(true)}
                     onMouseLeave={() => setIsHovered(false)}
-                    className={`mt-8 sm:mt-10 inline-block bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold py-3 sm:py-4 px-8 sm:px-10 rounded-full transition-all duration-500 shadow-lg text-sm sm:text-base relative overflow-hidden group ${isHovered ? 'scale-110 shadow-2xl' : 'hover:scale-105'}`}
+                    className={`mt-12 inline-block bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold py-4 px-10 rounded-full transition-all duration-500 shadow-lg text-base relative overflow-hidden group ${isHovered ? 'scale-105 shadow-2xl' : 'hover:scale-105'}`}
                     style={{
                         boxShadow: isHovered ? '0 20px 40px rgba(59, 130, 246, 0.4)' : '0 10px 20px rgba(59, 130, 246, 0.2)'
                     }}
@@ -822,8 +925,12 @@ const Footer = () => {
                     <span className="relative z-10">Say Hello</span>
                     <span className={`absolute inset-0 animate-shimmer opacity-50`}></span>
                 </a>
-                <div className="mt-16 sm:mt-20 text-xs sm:text-sm text-gray-500 animate-fadeIn" style={{ animationDelay: '0.5s' }}>
-                    &copy; {new Date().getFullYear()} Abhishek Mishra. Inspired by modern design principles.
+                
+                <div className="mt-20 pt-8 border-t border-stone-200 text-sm text-gray-500 animate-fadeIn flex flex-col sm:flex-row justify-between items-center gap-4" style={{ animationDelay: '0.5s' }}>
+                    <span>&copy; {new Date().getFullYear()} Abhishek Mishra. All rights reserved.</span>
+                    <span className="flex items-center gap-1">
+                        Made with <span className="text-red-500 animate-pulse">❤</span>, React & Tailwind
+                    </span>
                 </div>
             </div>
         </footer>
@@ -919,11 +1026,11 @@ export default function App() {
       <main>
         <Hero />
         <div className="w-full px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
-          <div className="grid md:grid-cols-3 gap-6 md:gap-8 lg:gap-12 py-12 md:py-16 lg:py-20">
+          <div className="grid md:grid-cols-[280px_1fr] gap-8 lg:gap-12 py-12 md:py-16 lg:py-20">
             <div className="md:col-span-1">
               <ProfileCard />
             </div>
-            <div className="md:col-span-2">
+            <div className="md:col-span-1">
                 <About />
             </div>
           </div>
