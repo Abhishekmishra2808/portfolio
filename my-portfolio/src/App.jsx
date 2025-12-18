@@ -42,9 +42,9 @@ const SEOMetaTags = () => {
 const ArrowUpRightIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 20 20"
+    viewBox="0 0 24 24"
     fill="currentColor"
-    className="w-4 h-4 ml-1.5 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+    className="w-5 h-5 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
   >
     <path
       fillRule="evenodd"
@@ -75,9 +75,17 @@ const MailIcon = () => (
     </svg>
 );
 
-const LeetCodeIcon = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" className="h-6 w-6">
-        <path d="M13.483 0a1.374 1.374 0 0 0-1.374 1.374v9.704h-1.237V1.374A1.374 1.374 0 0 0 9.5 0H2.25A1.374 1.374 0 0 0 .875 1.374v15.25A1.374 1.374 0 0 0 2.25 18h5.849a1.374 1.374 0 0 0 1.374-1.374v-4.82h1.237v4.82A1.374 1.374 0 0 0 12.083 18H21.75a1.374 1.374 0 0 0 1.374-1.374V1.374A1.374 1.374 0 0 0 21.75 0h-8.267zM3.625 15.25V2.75h4.5v12.5h-4.5zm16.75 0h-6.849v4.875a1.374 1.374 0 0 0 1.374 1.375h1.237a1.374 1.374 0 0 0 1.374-1.375v-4.875h1.25V2.75h-12.133v12.5z"></path>
+const YouTubeIcon = () => (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
+        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+    </svg>
+);
+
+const ArchitectureIcon = () => (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5">
+        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+        <line x1="3" y1="9" x2="21" y2="9"></line>
+        <line x1="9" y1="21" x2="9" y2="9"></line>
     </svg>
 );
 
@@ -92,7 +100,18 @@ const projects = [
         liveUrl: "https://test-bioline.onrender.com/",
         githubUrl: "https://github.com/Abhishekmishra2808/test-bioline",
         image: "/BioLine.png",
-        architectureUrl: "https://drive.google.com/file/d/1dAhg51AToQwWHk2uPVuHBdl4X3jOyofJ/view?usp=sharing"
+        architectureUrl: "https://drive.google.com/file/d/1dAhg51AToQwWHk2uPVuHBdl4X3jOyofJ/view?usp=sharing",
+        youtubeUrl: "https://www.youtube.com/watch?v=i7P405rwkt0"
+    },
+    {
+        title: "MoleculeX: Strategic Intelligence Platform",
+        description: "MoleculeX is a strategic intelligence platform for pharmaceutical market research. Moving beyond standard LLM interfaces, it employs a proprietary 'Swarm-and-Council' architecture to convert live web data and internal documents into peer-reviewed, board-ready strategic reports.",
+        category: "AI Research & Strategic Intelligence",
+        tech: ["Python", "React", "FastAPI", "PostgreSQL", "Docker", "AWS"],
+        liveUrl: "https://molecule-x.vercel.app/",
+        githubUrl: "https://github.com/Abhishekmishra2808/molecule-x",
+        image: "/MoleculeX.jpeg",
+        youtubeUrl: "https://youtu.be/VOU2sL3VK7Y"
     },
     {
         title: "RuraLens: Digital Twin for Smart Rural Governance",
@@ -104,15 +123,15 @@ const projects = [
         image: "/RuraLens.png",
         architectureUrl: "https://drive.google.com/file/d/1YKBEOaaNThRwkrCHx8gJGzZ8QwL2pq-l/view?usp=sharing"
     },
-    {
-        title: "AI Quiz Clash",
-        description: "A real-time web platform for knowledge-based competition, featuring an on-demand content engine powered by the Gemini AI to generate an endless stream of quiz questions.",
-        category: "Full-Stack Web Application / AI Game",
-        tech: ["React", "Vite", "Firebase", "Tailwind", "Redux", "JavaScript"],
-        liveUrl: "https://quiz-iota-nine-98.vercel.app/",
-        githubUrl: "https://github.com/Abhishekmishra2808/quiz",
-        image: "/quiz.jpeg"
-    },
+    // {
+    //     title: "AI Quiz Clash",
+    //     description: "A real-time web platform for knowledge-based competition, featuring an on-demand content engine powered by the Gemini AI to generate an endless stream of quiz questions.",
+    //     category: "Full-Stack Web Application / AI Game",
+    //     tech: ["React", "Vite", "Firebase", "Tailwind", "Redux", "JavaScript"],
+    //     liveUrl: "https://quiz-iota-nine-98.vercel.app/",
+    //     githubUrl: "https://github.com/Abhishekmishra2808/quiz",
+    //     image: "/quiz.jpeg"
+    // },
     {
         title: "MOSDAC-AI: Intelligent Scientific Data Agent",
         description: "A specialized chatbot developed for an ISRO hackathon, acting as a digital expert on India's meteorological and oceanographic data by autonomously scraping and structuring scientific data.",
@@ -533,179 +552,7 @@ const About = () => {
         </div>
     );
 };
-const CodingProfiles = () => {
-    // State to hold LeetCode stats. Initialized with your current data as fallback.
-    const [stats, setStats] = useState({
-        totalSolved: 17,
-        easy: 10,
-        medium: 7,
-        hard: 0,
-        loading: true,
-    });
 
-    const [isHovered, setIsHovered] = useState(false);
-    const [error, setError] = useState(false);
-
-    // Fetch live LeetCode data
-    useEffect(() => {
-        const fetchLeetCodeStats = async () => {
-            try {
-                // Using a public LeetCode API proxy
-                const response = await fetch('https://leetcode-stats-api.herokuapp.com/eXIzQQrEW7');
-                
-                if (!response.ok) {
-                    throw new Error('Failed to fetch');
-                }
-                
-                const data = await response.json();
-                
-                setStats({
-                    totalSolved: data.totalSolved || 17,
-                    easy: data.easySolved || 10,
-                    medium: data.mediumSolved || 7,
-                    hard: data.hardSolved || 0,
-                    loading: false,
-                });
-                setError(false);
-            } catch (err) {
-                console.error('Error fetching LeetCode stats:', err);
-                // Keep the default stats if fetch fails
-                setStats(prevStats => ({ ...prevStats, loading: false }));
-                setError(true);
-            }
-        };
-
-        fetchLeetCodeStats();
-    }, []);
-
-    const { totalSolved, easy, medium, hard, loading } = stats;
-    const easyPercentage = totalSolved > 0 ? (easy / totalSolved) * 100 : 0;
-    const mediumPercentage = totalSolved > 0 ? (medium / totalSolved) * 100 : 0;
-    const hardPercentage = totalSolved > 0 ? (hard / totalSolved) * 100 : 0;
-
-    return (
-        <div className="md:col-span-2 flex flex-col gap-8">
-            <div>
-                <h3 className="text-xl font-semibold text-gray-900">Continuous Improvement</h3>
-                <p className="mt-2 text-gray-600 leading-relaxed">
-                    I actively sharpen my problem-solving skills through algorithmic challenges. 
-                    Consistency on platforms like LeetCode helps me write optimized, scalable code.
-                </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {/* LeetCode Card */}
-                <div 
-                    className={`bg-white rounded-3xl border border-stone-200 p-8 transition-all duration-500 group relative overflow-hidden ${loading ? 'animate-pulse' : 'hover:shadow-2xl hover:border-yellow-400/50 hover:-translate-y-1'}`} 
-                    style={{ boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.05)' }}
-                    onMouseEnter={() => setIsHovered(true)}
-                    onMouseLeave={() => setIsHovered(false)}
-                >
-                    {/* Animated background effect */}
-                    <div className="absolute inset-0 bg-gradient-to-br from-yellow-50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
-                    
-                    <div className="flex items-start justify-between relative z-10">
-                        <div>
-                            <h3 className="text-2xl font-bold text-gray-900 group-hover:text-yellow-600 transition-colors duration-300 flex items-center gap-2">
-                                LeetCode <ArrowUpRightIcon />
-                            </h3>
-                            <p className="text-gray-600 mt-1 text-sm">Problem Solving</p>
-                        </div>
-                        <div className="p-3 bg-yellow-100 rounded-2xl text-yellow-600 group-hover:scale-110 transition-transform duration-500 group-hover:rotate-12">
-                            <LeetCodeIcon />
-                        </div>
-                    </div>
-
-                    <div className="mt-8 space-y-5 relative z-10">
-                        <div className="flex justify-between items-end">
-                            <span className="text-4xl font-bold text-gray-900">{totalSolved}</span>
-                            <span className="text-sm font-medium text-gray-500 mb-1">Problems Solved</span>
-                        </div>
-
-                        {/* Progress Bars */}
-                        <div className="space-y-3">
-                            {/* Easy */}
-                            <div className="space-y-1">
-                                <div className="flex justify-between text-xs font-medium">
-                                    <span className="text-green-600">Easy</span>
-                                    <span className="text-gray-400">{easy}</span>
-                                </div>
-                                <div className="h-2 bg-stone-100 rounded-full overflow-hidden">
-                                    <div className="h-full bg-green-500 rounded-full transition-all duration-1000" style={{ width: `${easyPercentage}%` }}></div>
-                                </div>
-                            </div>
-                            {/* Medium */}
-                            <div className="space-y-1">
-                                <div className="flex justify-between text-xs font-medium">
-                                    <span className="text-yellow-600">Medium</span>
-                                    <span className="text-gray-400">{medium}</span>
-                                </div>
-                                <div className="h-2 bg-stone-100 rounded-full overflow-hidden">
-                                    <div className="h-full bg-yellow-500 rounded-full transition-all duration-1000" style={{ width: `${mediumPercentage}%` }}></div>
-                                </div>
-                            </div>
-                            {/* Hard */}
-                            <div className="space-y-1">
-                                <div className="flex justify-between text-xs font-medium">
-                                    <span className="text-red-600">Hard</span>
-                                    <span className="text-gray-400">{hard}</span>
-                                </div>
-                                <div className="h-2 bg-stone-100 rounded-full overflow-hidden">
-                                    <div className="h-full bg-red-500 rounded-full transition-all duration-1000" style={{ width: `${hardPercentage}%` }}></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <a href="https://leetcode.com/u/eXIzQQrEW7/" target="_blank" rel="noopener noreferrer" className="absolute inset-0 z-20"></a>
-                </div>
-
-                {/* GitHub Card - Updated to match LeetCode style */}
-                <div 
-                    className="bg-white rounded-3xl border border-stone-200 p-8 transition-all duration-500 group relative overflow-hidden hover:shadow-2xl hover:border-gray-400/50 hover:-translate-y-1"
-                    style={{ boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.05)' }}
-                >
-                    <div className="absolute inset-0 bg-gradient-to-br from-gray-50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
-                    
-                    <div className="flex items-start justify-between relative z-10">
-                        <div>
-                            <h3 className="text-2xl font-bold text-gray-900 group-hover:text-gray-700 transition-colors duration-300 flex items-center gap-2">
-                                GitHub <ArrowUpRightIcon />
-                            </h3>
-                            <p className="text-gray-600 mt-1 text-sm">Open Source</p>
-                        </div>
-                        <div className="p-3 bg-gray-100 rounded-2xl text-gray-700 group-hover:scale-110 transition-transform duration-500 group-hover:rotate-12">
-                            <GitHubIcon />
-                        </div>
-                    </div>
-
-                    <div className="mt-8 relative z-10 flex flex-col justify-between h-full">
-                        <p className="text-gray-600 text-sm leading-relaxed mb-6">
-                            Check out my repositories for more projects, experiments, and contributions to the open-source community.
-                        </p>
-                        <div className="flex gap-6">
-                            <div className="flex flex-col">
-                                <span className="text-3xl font-bold text-gray-900 flex items-center gap-2">
-                                    15+ 
-                                    <svg className="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
-                                </span>
-                                <span className="text-xs text-gray-500 font-medium mt-1">Repositories</span>
-                            </div>
-                            <div className="flex flex-col">
-                                <span className="text-3xl font-bold text-gray-900 flex items-center gap-2">
-                                    Active
-                                    <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                                </span>
-                                <span className="text-xs text-gray-500 font-medium mt-1">Status</span>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="https://github.com/Abhishekmishra2808" target="_blank" rel="noopener noreferrer" className="absolute inset-0 z-20"></a>
-                </div>
-            </div>
-        </div>
-    );
-};
 
 const techIconsMap = {
     "Python": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
@@ -775,7 +622,29 @@ const Work = () => {
                         
                         {/* Floating Action Button on Image */}
                         <div className={`absolute bottom-4 right-4 flex gap-2 transition-all duration-500 ${hoveredIndex === index ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}`}>
-                             <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="p-3 bg-white rounded-full text-gray-900 hover:text-blue-600 shadow-lg hover:scale-110 transition-all">
+                            {project.youtubeUrl && (
+                                <a 
+                                    href={project.youtubeUrl} 
+                                    target="_blank" 
+                                    rel="noopener noreferrer" 
+                                    className="p-3 bg-red-600 rounded-full text-white hover:bg-red-700 shadow-lg hover:scale-110 transition-all"
+                                    title="Watch Video"
+                                >
+                                    <YouTubeIcon />
+                                </a>
+                            )}
+                            {project.architectureUrl && (
+                                <a 
+                                    href={project.architectureUrl} 
+                                    target="_blank" 
+                                    rel="noopener noreferrer" 
+                                    className="p-3 bg-purple-600 rounded-full text-white hover:bg-purple-700 shadow-lg hover:scale-110 transition-all"
+                                    title="View Architecture"
+                                >
+                                    <ArchitectureIcon />
+                                </a>
+                            )}
+                            <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="p-3 bg-white rounded-full text-gray-900 hover:text-blue-600 shadow-lg hover:scale-110 transition-all" title="View Live Demo">
                                 <ArrowUpRightIcon />
                             </a>
                         </div>
@@ -854,9 +723,9 @@ const Section = ({ title, children, id }) => {
             className={`py-20 sm:py-24 md:py-32 grid md:grid-cols-[280px_1fr] gap-8 lg:gap-12 border-t border-stone-200/50 transition-all duration-1000 ${isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'}`}
         >
             <div className="md:col-span-1 sticky top-28 self-start">
-                <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 group inline-block tracking-wide">
+                <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 group inline-block tracking-wide relative">
                     {title}
-                    <span className="block h-1.5 w-12 bg-blue-600 mt-4 rounded-full group-hover:w-full transition-all duration-500 ease-out"></span>
+                    <span className="block h-1.5 w-12 bg-blue-600 mt-2 rounded-full group-hover:w-full transition-all duration-500 ease-out"></span>
                 </h2>
             </div>
             {children}
@@ -1036,9 +905,6 @@ export default function App() {
           </div>
           <Section title="Featured Work" id="work">
             <Work />
-          </Section>
-          <Section title="Coding Profiles" id="coding">
-            <CodingProfiles />
           </Section>
         </div>
         <Footer />
