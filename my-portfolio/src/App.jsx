@@ -108,7 +108,7 @@ const projects = [
         description: "MoleculeX is a strategic intelligence platform for pharmaceutical market research. Moving beyond standard LLM interfaces, it employs a proprietary 'Swarm-and-Council' architecture to convert live web data and internal documents into peer-reviewed, board-ready strategic reports.",
         category: "AI Research & Strategic Intelligence",
         tech: ["Python", "React", "FastAPI", "PostgreSQL", "Docker", "AWS"],
-        liveUrl: "https://molecule-x.vercel.app/",
+        liveUrl: "https://molecule-delta.vercel.app/",
         githubUrl: "https://github.com/Abhishekmishra2808/molecule-x",
         image: "/MoleculeX.jpeg",
         youtubeUrl: "https://youtu.be/VOU2sL3VK7Y"
@@ -599,7 +599,7 @@ const Work = () => {
     const [hoveredIndex, setHoveredIndex] = useState(null);
 
     return (
-        <div className="md:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-y-12 sm:gap-y-16 gap-x-8">
+        <div className="md:col-span-1 grid grid-cols-1 md:grid-cols-2 gap-y-12 sm:gap-y-16 gap-x-8">
             {projects.map((project, index) => (
                 <div 
                     key={index} 
