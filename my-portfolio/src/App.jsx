@@ -604,6 +604,12 @@ const techIconsMap = {
 const Work = () => {
     const [hoveredIndex, setHoveredIndex] = useState(null);
 
+    const handleCardClick = (e, liveUrl) => {
+        // Don't navigate if clicking on action buttons
+        if (e.target.closest('a')) return;
+        window.open(liveUrl, '_blank', 'noopener,noreferrer');
+    };
+
     return (
         <div className="md:col-span-1 grid grid-cols-1 md:grid-cols-2 gap-y-12 sm:gap-y-16 gap-x-8">
             {projects.map((project, index) => (
@@ -611,6 +617,7 @@ const Work = () => {
                     key={index} 
                     onMouseEnter={() => setHoveredIndex(index)}
                     onMouseLeave={() => setHoveredIndex(null)}
+                    onClick={(e) => handleCardClick(e, project.liveUrl)}
                     className={`bg-white rounded-3xl border border-stone-200 flex flex-col transition-all duration-500 overflow-hidden group cursor-pointer ${hoveredIndex === index ? 'shadow-2xl border-blue-300/70 scale-[1.02] -translate-y-2' : 'hover:shadow-xl hover:border-blue-200/50'}`} 
                     style={{ 
                         boxShadow: hoveredIndex === index ? '0 25px 50px -12px rgba(59, 130, 246, 0.25)' : '0 4px 6px -1px rgba(0, 0, 0, 0.05)',
