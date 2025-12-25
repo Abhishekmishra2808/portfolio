@@ -375,7 +375,7 @@ const Hero = () => {
                         {/* Vertical Gradient for Depth */}
                         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-stone-50/30 to-stone-100/50 blur-2xl -z-20"></div>
 
-                        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-[0.9] tracking-tight animate-slideDown font-extrabold" style={{ fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" }}>
+                        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-[1.2] tracking-tight animate-slideDown font-extrabold" style={{ fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" }}>
                             <span className="block" style={{ background: 'linear-gradient(90deg, #000000 0%, #1f2937 40%, #6b7280 70%, #d1d5db 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
                                 Full-Stack Developer & ML Engineer.
                             </span>
