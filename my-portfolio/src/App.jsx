@@ -105,7 +105,7 @@ const projects = [
     },
     {
         title: "MoleculeX: Strategic Intelligence Platform",
-        description: "MoleculeX is a strategic intelligence platform for pharmaceutical market research. Moving beyond standard LLM interfaces, it employs a proprietary 'Swarm-and-Council' architecture to convert live web data and internal documents into peer-reviewed, board-ready strategic reports.",
+        description: "A strategic intelligence platform for pharmaceutical research using a 'Swarm-and-Council' AI architecture to convert live data into board-ready strategic reports.",
         category: "AI Research & Strategic Intelligence",
         tech: ["Python", "React", "FastAPI", "PostgreSQL", "Docker", "AWS"],
         liveUrl: "https://molecule-delta.vercel.app/",
@@ -123,23 +123,14 @@ const projects = [
         image: "/RuraLens.png",
         architectureUrl: "https://drive.google.com/file/d/1YKBEOaaNThRwkrCHx8gJGzZ8QwL2pq-l/view?usp=sharing"
     },
-    // {
-    //     title: "AI Quiz Clash",
-    //     description: "A real-time web platform for knowledge-based competition, featuring an on-demand content engine powered by the Gemini AI to generate an endless stream of quiz questions.",
-    //     category: "Full-Stack Web Application / AI Game",
-    //     tech: ["React", "Vite", "Firebase", "Tailwind", "Redux", "JavaScript"],
-    //     liveUrl: "https://quiz-iota-nine-98.vercel.app/",
-    //     githubUrl: "https://github.com/Abhishekmishra2808/quiz",
-    //     image: "/quiz.jpeg"
-    // },
     {
-        title: "MOSDAC-AI: Intelligent Scientific Data Agent",
-        description: "A specialized chatbot developed for an ISRO hackathon, acting as a digital expert on India's meteorological and oceanographic data by autonomously scraping and structuring scientific data.",
-        category: "AI Agent / Specialized Chatbot",
-        tech: ["FastAPI", "Gemini API", "Pandas", "NumPy", "Jupyter", "Python"],
-        liveUrl: "https://mosdac-ai.onrender.com/",
-        githubUrl: "https://github.com/Abhishekmishra2808/mosdac-ai",
-        image: "/Mosdac.png"
+        title: "Quizora: Real-Time Multiplayer Trivia Platform",
+        description: "A real-time multiplayer trivia platform using LLMs to generate custom quizzes on demand, with room-based architecture for competitive battles between up to four players.",
+        category: "Full-Stack Web Application / AI Game",
+        tech: ["React", "Vite", "Firebase", "Tailwind", "Socket.io", "Gemini API"],
+        liveUrl: "https://quiz-iota-nine-98.vercel.app/",
+        githubUrl: "https://github.com/Abhishekmishra2808/quiz",
+        image: "/quizora.jpeg"
     }
 ];
 
