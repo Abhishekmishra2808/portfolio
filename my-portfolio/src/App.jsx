@@ -419,12 +419,25 @@ const Hero = () => {
 const ProfileCard = () => {
     const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
     const [isHovered, setIsHovered] = useState(false);
+    const rafRef = useRef(null);
 
     const handleMouseMove = (e) => {
-        const rect = e.currentTarget.getBoundingClientRect();
-        const x = ((e.clientX - rect.left) / rect.width) * 100;
-        const y = ((e.clientY - rect.top) / rect.height) * 100;
-        setMousePosition({ x, y });
+        // Cancel any pending animation frame to avoid stacking
+        if (rafRef.current) {
+            cancelAnimationFrame(rafRef.current);
+        }
+        
+        const target = e.currentTarget;
+        const clientX = e.clientX;
+        const clientY = e.clientY;
+        
+        // Batch DOM read inside requestAnimationFrame to avoid forced reflow
+        rafRef.current = requestAnimationFrame(() => {
+            const rect = target.getBoundingClientRect();
+            const x = ((clientX - rect.left) / rect.width) * 100;
+            const y = ((clientY - rect.top) / rect.height) * 100;
+            setMousePosition({ x, y });
+        });
     };
 
     return (
@@ -452,15 +465,17 @@ const ProfileCard = () => {
                     <div className="absolute inset-0 bg-blue-500 rounded-2xl blur-2xl opacity-0 group-hover:opacity-20 transition-opacity duration-500 scale-90 group-hover:scale-110"></div>
                     <img
                         src="/abhishek_img.jpg"
-                        alt="Abhishek Mishra"
+                        alt="Abhishek Mishra - Full-Stack Developer & ML Engineer"
                         className="w-32 h-32 sm:w-40 sm:h-40 rounded-2xl border-2 border-white shadow-lg object-cover transition-transform duration-700 group-hover:scale-[1.02] group-hover:rotate-1"
+                        fetchpriority="high"
+                        decoding="async"
                     />
                 </div>
                 
                 <div className="space-y-2">
                     <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">Abhishek Mishra</h2>
                     <p className="text-gray-500 font-medium">Full-Stack & ML Engineer</p>
-                    <div className="flex items-center justify-center gap-2 text-sm text-gray-400 pt-1">
+                    <div className="flex items-center justify-center gap-2 text-sm text-gray-600 pt-1">
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
                         <span>Delhi, India</span>
                     </div>
@@ -480,13 +495,13 @@ const ProfileCard = () => {
                 </a>
                 
                 <div className="flex items-center gap-4 pt-2">
-                    <a href="https://github.com/Abhishekmishra2808" target="_blank" rel="noopener noreferrer" className="p-2 text-gray-400 hover:text-gray-900 transition-colors transform hover:scale-110">
+                    <a href="https://github.com/Abhishekmishra2808" target="_blank" rel="noopener noreferrer" className="p-2 text-gray-400 hover:text-gray-900 transition-colors transform hover:scale-110" aria-label="Visit my GitHub profile">
                         <GitHubIcon />
                     </a>
-                    <a href="https://www.linkedin.com/in/abhishek-mishra-b76993317/" target="_blank" rel="noopener noreferrer" className="p-2 text-gray-400 hover:text-blue-600 transition-colors transform hover:scale-110">
+                    <a href="https://www.linkedin.com/in/abhishek-mishra-b76993317/" target="_blank" rel="noopener noreferrer" className="p-2 text-gray-400 hover:text-blue-600 transition-colors transform hover:scale-110" aria-label="Connect on LinkedIn">
                         <LinkedInIcon />
                     </a>
-                    <a href="mailto:mishra.abhishek2808@gmail.com" className="p-2 text-gray-400 hover:text-red-500 transition-colors transform hover:scale-110">
+                    <a href="mailto:mishra.abhishek2808@gmail.com" className="p-2 text-gray-400 hover:text-red-500 transition-colors transform hover:scale-110" aria-label="Send me an email">
                         <MailIcon />
                     </a>
                 </div>
@@ -606,8 +621,10 @@ const Work = () => {
                         <img 
                             src={project.image} 
                             alt={project.title}
-                            className={`w-full h-full object-cover transition-all duration-700 ${hoveredIndex === index ? 'scale-110' : 'scale-100'}`}
+                            className={`w-full h-full object-cover transition-transform duration-700 will-change-transform ${hoveredIndex === index ? 'scale-110' : 'scale-100'}`}
                             style={{ objectPosition: 'top center' }}
+                            loading="lazy"
+                            decoding="async"
                         />
                         <div className={`absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent transition-opacity duration-500 ${hoveredIndex === index ? 'opacity-100' : 'opacity-60'}`}></div>
                         
@@ -761,13 +778,13 @@ const Footer = () => {
                 </p>
                 
                 <div className="mt-10 flex justify-center gap-6">
-                    <a href="https://github.com/Abhishekmishra2808" target="_blank" rel="noopener noreferrer" className="p-3 bg-white rounded-full shadow-md hover:shadow-lg hover:scale-110 transition-all duration-300 text-gray-700 hover:text-black">
+                    <a href="https://github.com/Abhishekmishra2808" target="_blank" rel="noopener noreferrer" className="p-3 bg-white rounded-full shadow-md hover:shadow-lg hover:scale-110 transition-all duration-300 text-gray-700 hover:text-black" aria-label="Visit my GitHub profile">
                         <GitHubIcon />
                     </a>
-                    <a href="https://www.linkedin.com/in/abhishek-mishra-b76993317/" target="_blank" rel="noopener noreferrer" className="p-3 bg-white rounded-full shadow-md hover:shadow-lg hover:scale-110 transition-all duration-300 text-gray-700 hover:text-blue-600">
+                    <a href="https://www.linkedin.com/in/abhishek-mishra-b76993317/" target="_blank" rel="noopener noreferrer" className="p-3 bg-white rounded-full shadow-md hover:shadow-lg hover:scale-110 transition-all duration-300 text-gray-700 hover:text-blue-600" aria-label="Connect on LinkedIn">
                         <LinkedInIcon />
                     </a>
-                    <a href="mailto:mishra.abhishek2808@gmail.com" className="p-3 bg-white rounded-full shadow-md hover:shadow-lg hover:scale-110 transition-all duration-300 text-gray-700 hover:text-red-500">
+                    <a href="mailto:mishra.abhishek2808@gmail.com" className="p-3 bg-white rounded-full shadow-md hover:shadow-lg hover:scale-110 transition-all duration-300 text-gray-700 hover:text-red-500" aria-label="Send me an email">
                         <MailIcon />
                     </a>
                 </div>
@@ -815,10 +832,10 @@ const ScrollProgressBar = () => {
 
     return (
         <div 
-            className="fixed top-0 left-0 h-1 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 z-[100] transition-all duration-150 shadow-lg animate-pulse-glow"
+            className="fixed top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 z-[100] origin-left"
             style={{ 
-                width: `${scrollProgress}%`,
-                boxShadow: '0 0 15px rgba(99, 102, 241, 0.5)'
+                transform: `scaleX(${scrollProgress / 100})`,
+                willChange: 'transform'
             }}
         />
     );
