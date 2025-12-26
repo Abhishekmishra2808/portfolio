@@ -9,7 +9,7 @@
   font-weight: 400;
   letter-spacing: -0.01em;
 
-  color-scheme: light;
+  color-scheme: light dark;
   color: #1f2937;
   background-color: #fafaf9;
 
@@ -17,6 +17,24 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Dark mode root styles */
+.dark {
+  color-scheme: dark;
+  color: #f9fafb;
+  background-color: #000000;
+}
+
+.dark body {
+  background-color: #000000;
+}
+
+.dark body::before {
+  background-image: 
+    radial-gradient(circle at 20% 50%, rgba(6, 182, 212, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(59, 130, 246, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 40% 20%, rgba(139, 92, 246, 0.08) 0%, transparent 50%);
 }
 
 @keyframes logo-spin {
@@ -296,6 +314,11 @@ body {
   background-color: #fafaf9;
   position: relative;
   overflow-x: hidden;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.dark body {
+  background-color: #000000;
 }
 
 #root {
@@ -319,8 +342,16 @@ body::before {
   animation: gradient-shift 20s ease infinite;
   z-index: -1;
   pointer-events: none;
+  transition: background-image 0.5s ease;
 }
 
 * {
   scroll-behavior: smooth;
+}
+
+/* Smooth transitions for dark mode switching */
+*, *::before, *::after {
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
 }
